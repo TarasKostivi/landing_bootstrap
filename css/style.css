@@ -651,7 +651,7 @@ textarea.form-control{
 	width: 33%;
 }
 .portfolio-img img{
-	width: 100%;
+	max-width: 100%;
 	max-height: 100%
 }
 .item > img {
