@@ -344,7 +344,6 @@ blockquote span{
 		text-align: center;
 	}
 }
-
 /* === DEFAULT SECTION END === */
 
 /* DEFAULT COMPONENT END */
@@ -637,7 +636,6 @@ textarea.form-control{
 	margin-top: 80px;
 	float: none;
 	display: inline-block;
-	
 }
 .portfolio-tab .nav-tabs{
 	text-align: center;
