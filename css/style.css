@@ -350,7 +350,7 @@ blockquote span{
 
 /* ===== DEFAULT FORM ELEMENT ===== */
 .form-subscribe .btn{
-	padding: 11px 28px;
+	padding: 11px 20px;
 	font-size: 13px;
 }
 .form-subscribe .btn-black:hover{
@@ -803,7 +803,7 @@ textarea.form-control{
 .latest-news .title .link-title:hover{
 	color: rgba(0, 0, 0, .8)
 }
-.row .news-item .small{
+.news-item .title{
 	font-size: 15px;
 	color: rgba(0, 0, 0, .5);
 	margin-bottom: 14px;
@@ -969,8 +969,11 @@ textarea.form-control{
 }
 .standart-form .form-control{
 	margin-right: 140px;
-	padding-top: 13px;
-	padding-bottom: 13px;
+	max-width: 100%;
+}
+.form-control{
+	height: 37px;
+	font-size: 12px;
 }
 /* ===== STAY-INFORMED END ===== */
 
