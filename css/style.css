@@ -1007,16 +1007,15 @@ textarea.form-control{
 .footer-informed .copy-right{
 	display: block;
 }
-.footer-logo .footer-img{
+.footer-logo{
 	padding-top: 138px;
+	padding-bottom: 21px;
 }
 .social-nav .rhomb-icon:hover{
 	background-color: #111;
 	color: #fff;
 }
-.social-nav ul{
-	margin-top: 24px;
-}
+
 .social-nav li{
 	display: inline-block;
 	vertical-align: middle;
