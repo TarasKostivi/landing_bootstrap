@@ -48,7 +48,7 @@ textarea{
 
 /* ==  HEADER == */
 .header{
-	padding: 30px 0;
+	padding-top: 30px;
 	position: fixed;
 	width: 100%;
 	z-index: 99;
@@ -74,6 +74,7 @@ textarea{
 }
 .default-section{
 	padding: 140px 0;
+	border-top: 1px solid #ececec;
 }
 .default-section.small{
 	padding: 70px 0;
@@ -82,6 +83,9 @@ textarea{
 	padding: 0;
 	margin: 0;
 	border: none;
+}
+.navbar-collapse{
+	padding: 0 0;
 }
 .header .navbar-toggle .icon-bar{
 	background-color: #fff;	
@@ -153,7 +157,6 @@ textarea{
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: .5em;
-	margin-bottom: 75px;
 	color: #111;
 }
 .title > *{
@@ -336,14 +339,11 @@ blockquote span{
 .default-section .small-title{
 	margin-bottom: 20px;
 }
-.default-section .default-text{
-	margin-top: 20px;
-}
-@media(max-width: 479px){
+/* @media(max-width: 479px){
 	.default-section .default-text{
 		text-align: center;
 	}
-}
+} */
 /* === DEFAULT SECTION END === */
 
 /* DEFAULT COMPONENT END */
@@ -425,6 +425,7 @@ textarea.form-control{
 .inner-content{
 	text-align: center;
 	display: inline-block;
+	vertical-align: middle;
 }
 .inner-content h1{
 	font-family: 'Dosis', sans-serif;
@@ -571,6 +572,9 @@ textarea.form-control{
 /* ===== ABOUT-STUDIO END =====  */
 
 /* ===== SERVICES ===== */
+.services-tab {
+	margin-top: 118px;
+}
 .services-tab .nav-tabs > li{
 	width: 20%;
 	text-align: center;
@@ -631,6 +635,7 @@ textarea.form-control{
 .portfolio .portfolio-text {
 	max-width: 760px;
 	margin: auto;
+	margin-top: 77px;
 }
 .portfolio-tab .nav-tabs > li{
 	margin-top: 80px;
@@ -645,10 +650,10 @@ textarea.form-control{
 	font-size: 13px;
 	font-weight: 300;
 }
-.item img{
+.portfolio-item img{
 	width: 33%;
 }
-.portfolio-img img{
+.portfolio-inner img{
 	max-width: 100%;
 	max-height: 100%
 }
@@ -656,16 +661,16 @@ textarea.form-control{
 	padding-bottom: 7px;
 	padding-left: 7px;
 }
-.portfolio-img img{
+.portfolio-inner img{
 	filter: grayscale(100%);
 	transition: all 3s;
 }
-.portfolio-item .portfolio-img:hover img{
+.portfolio-item .portfolio-inner:hover img{
 	filter: grayscale(0);
 }
 @media(max-width: 1199px){
-	.portfolio-img img{
-		width: 49%;
+	.portfolio-inner img{
+		width: 50%;
 	}
 }
 @media(max-width: 767px){
@@ -676,7 +681,7 @@ textarea.form-control{
 		margin-top: 10px;
 		margin-left: 0;
 	}
-	.portfolio-img img{
+	.portfolio-inner img{
 		width: 100%;
 	}	
 }
