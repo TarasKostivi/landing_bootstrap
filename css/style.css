@@ -156,6 +156,7 @@ textarea{
 	font-family: "Dosis", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
+	margin-bottom: 80px;
 	letter-spacing: .5em;
 	color: #111;
 }
@@ -237,10 +238,6 @@ textarea{
 	background-color: rgba(255, 255, 255, .5);
 	color: #fff;
 }
-.project-btn .btn.btn-default:hover{
-	background-color: rgba(255, 255, 255, .5);
-	color: #fff;
-}
 .btn.btn-grey{
 	background-color: rgba(0, 0, 0, .1);
 	color: rgba(0, 0, 0, .5);
@@ -256,6 +253,9 @@ textarea{
 	background-color: rgba(0, 0, 0, .9);
 	color:  rgba(255, 255, 255, 1.0);
 }
+.btn.btn-black:hover{
+	background-color: rgba(0, 0, 0, .5);
+}
 .btn.btn-small{
 	font-size: 11px;
 	padding: 8px 15px;
@@ -263,6 +263,9 @@ textarea{
 /* === BTN BTN-DEFAULT END === */
 
 /* DEFAULT-TEXT */
+.author-news .default-text{
+	padding: 26px 0;
+}
 .default-text{
 	font-size: 15px;
 	line-height: 1.733;
@@ -319,11 +322,13 @@ blockquote span{
 }
 /* ===== TABS END ===== */
 
-/* RPW + ROW */
+/* ===== WHY-CHOOSE-US ===== */
 .why-choose-us .row + .row{
 	margin-top: 83px;
 }
-
+.why-choose-us .default-text{
+	margin-top: 30px;
+}
 @media (max-width: 991px){
 	.why-choose-us .row .more-icon{
 		margin-top: 30px;
@@ -332,8 +337,11 @@ blockquote span{
 	.why-choose-Us .row > div:last-child .more-icon{
 		margin-bottom: 0px; 
 	}
+	.why-choose-us .default-text{
+		text-align: center;
+	}
 }
-/* RPW + ROW  END*/
+/* ===== WHY-CHOOSE-US END ===== */
 
 /* === DEFAULT SECTION=== */
 .default-section .small-title{
@@ -362,7 +370,7 @@ blockquote span{
 	padding: 14px 20px; 
 }
 .form-sumbit  .btn-black:hover{
-	background-color: rgba(0, 0, 0, .5)
+	background-color: rgba(0, 0, 0, .5);
 }
 .form-info{
 	margin-top: 20px;
@@ -375,6 +383,9 @@ blockquote span{
 	font-size: 11px;
 }
 .form-sumbit .reque-info:hover{
+	color: #4b4b50;
+}
+.form-info .reque-info:hover{
 	color: #4b4b50;
 }
 .form-control{
@@ -463,10 +474,24 @@ textarea.form-control{
 		height: inherit;
 		padding: 150px 0;
 	}
+	.inner-content h1{
+		letter-spacing: .3em;
+		text-indent: .3em;
+	}
 }
+@media (max-width: 479px){
+	.inner-content h1{
+		letter-spacing: .2em;
+		text-indent: .2em;
+	}
+}
+
 /* INNER END */
 
 /* ===== ABOUT-STUDIO START =====  */
+.about-us-text{
+	margin-top: 78px;
+}
 .about-studio .about-us-text{
 	margin-bottom: 100px;
 }
@@ -626,6 +651,9 @@ textarea.form-control{
 /* === MORE-ICON END === */
 
 /* ====== PORTFOLIO ======  */
+.portfolio-tab{
+	margin-top: 80px;
+}
 .portfolio-tab .nav-tabs li + li{
 	margin-left: 60px;
 }
@@ -638,7 +666,6 @@ textarea.form-control{
 	margin-top: 77px;
 }
 .portfolio-tab .nav-tabs > li{
-	margin-top: 80px;
 	float: none;
 	display: inline-block;
 }
@@ -670,7 +697,7 @@ textarea.form-control{
 }
 @media(max-width: 1199px){
 	.portfolio-inner img{
-		width: 50%;
+		width: 49%;
 	}
 }
 @media(max-width: 767px){
@@ -704,6 +731,30 @@ textarea.form-control{
 	}
 }
 /* ===== LETS TALK END ===== */
+
+/* ===== START-PROJECT ===== */
+.start-project{
+	text-align: center;
+	height: 218px;
+}
+.start-project .middle-title{
+	padding-top: 70px;
+	padding-bottom: 0;
+	font-size: 18px;
+	font-family: "Dosis", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	color: #111;
+}
+.start-project .btn{
+	margin-top: 25px;
+}
+.start-project .btn.btn-default:hover{
+	background-color: rgba(255, 255, 255, .5);
+	color: #fff;
+}
+/* ===== START-PROJECT END ===== */
 
 /* ===== RIWIES ===== */
 .riviews{
@@ -799,6 +850,9 @@ textarea.form-control{
 /* ===== RIWIES END ===== */
 
 /* ===== LATEST-NEWS ===== */
+.latest-news .row{
+	margin-top: 80px;
+}
 .latest-news .title .link-title{
 	font-size: 11px;
 	line-height: 2.4em;
@@ -831,10 +885,6 @@ textarea.form-control{
 	text-transform: uppercase;
 	letter-spacing: .4em;
 	font-size: 11px;
-}
-.latest-news .news-item .default-text{
-	font-size: 15px;
-	margin-bottom: 28px;
 }
 .news-img img{
 	width: 100%;
@@ -960,6 +1010,7 @@ textarea.form-control{
 
 /* ===== STAY-INFORMED ===== */
 .stay-informed{
+
 	padding: 82px 0;
 }
 .stay-informed .title{
@@ -967,18 +1018,38 @@ textarea.form-control{
 	font-size: 16px;
 	letter-spacing: .3em; 
 }
-.standart-form .form-email,
-.standart-form .form-subscribe{
-	display: inline-block;
+.standart-form .form-email{
 	vertical-align: middle;
+	display: flex;
+	justify-content: center;
 }
-.standart-form .form-control{
-	margin-right: 140px;
+.form-email .form-email .btn,
+.standart-form .form-email .form-control{
+	max-width: 290px;
+}
+.standart-form .form-email .form-control{
+	margin-right: 5px;
+}
+.form-email .form-email .btn,
+.form-email .standart-form .form-control{
 	max-width: 100%;
 }
 .form-control{
 	height: 37px;
 	font-size: 12px;
+}
+@media (max-width: 599px){
+	.standart-form .form-email{
+		display: flex;
+		flex-direction: column;
+	}
+	.standart-form .form-email .form-control{
+		max-width: 100%;
+		margin-right: 0;
+	}
+	.standart-form .form-email .btn{
+		margin-top: 10px;
+	}
 }
 /* ===== STAY-INFORMED END ===== */
 
@@ -1009,11 +1080,13 @@ textarea.form-control{
 /* ===== MAP-CONTENT END ===== */
 
 /* ===== FOOTER ===== */
+.footer-informed{
+	padding: 140px 0 60px 0;
+}
 .footer-informed .copy-right{
 	display: block;
 }
 .footer-logo{
-	padding-top: 138px;
 	padding-bottom: 21px;
 }
 .social-nav .rhomb-icon:hover{
@@ -1036,7 +1109,6 @@ textarea.form-control{
 	font-family: "Dosis", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
-	padding-top: 109px;
 	padding-left: 15px;
 	letter-spacing: .5em;
 	color: rgba(0, 0, 0, .9);
